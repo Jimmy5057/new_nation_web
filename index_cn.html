@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>New Nation</title>
+  <title>新国度</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -11,266 +11,258 @@
   <link rel="icon" href="assets/images/app-icon.png" type="image/x-icon">
 </head>
 <body>
-  <!-- Hero Section -->
+  <!-- 主图部分 -->
   <section class="relative overflow-hidden">
-    <!-- Navigation -->
+    <!-- 导航 -->
     <nav class="container mx-auto px-4 md:px-6 py-6 md:py-8 flex justify-between items-center relative z-50">
         <!-- Logo -->
         <div class="flex items-center">
-            <img src="./assets/images/logo.png" alt="New Nation" class="h-8 md:h-12">
+            <img src="./assets/images/logo.png" alt="新国度" class="h-8 md:h-12">
         </div>
         
-        <!-- Language Selector -->
+        <!-- 语言选择器 -->
         <div class="relative">
             <button id="languageButton" class="px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-green-500/30 bg-green-500/10 text-white flex items-center gap-2 text-sm md:text-base">
-                <span id="selectedLanguage">EN</span>
+                <span id="selectedLanguage">简体中文</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 md:w-4 md:h-4">
                     <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
             </button>
             
-            <!-- Dropdown Menu -->
-            <div id="languageDropdown" class="hidden absolute top-full right-0 mt-2 w-24 bg-black/90 border border-green-500/30 rounded-lg overflow-hidden">
-                <a href="/index.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">EN</a>
-                <a href="/index_id.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">ID</a>
-                <a href="/index_ind.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">IND</a>
-                <a href="/index_cn.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">CN</a>
-                <a href="/index_ko.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">KO</a>
-                <a href="/index_ja.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">JA</a>
+            <!-- 下拉菜单 -->
+            <div id="languageDropdown" class="hidden absolute top-full right-0 mt-2 w-24 bg-black/90 border border-green-500/30 rounded-lg overflow-hidden z-50">
+                <a href="/index.html" data-lang="EN" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">英文</a>
+                <a href="/index_id.html" data-lang="ID" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">印尼文</a>
+                <a href="/index_ind.html" data-lang="IND" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">印度文</a>
+                <a href="/index_cn.html" data-lang="CN" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">简体中文</a>
+                <a href="/index_ko.html" data-lang="KO" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">韩文</a>
+                <a href="/index_ja.html" data-lang="JA" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">日文</a>
             </div>
         </div>
     </nav>
 
-    <!-- Main Hero Content -->
+    <!-- 主内容 -->
     <div class="container mx-auto px-4 md:px-6 md:h-[calc(100vh-88px)] flex flex-col justify-between relative z-10">
-        <!-- Top Content -->
+        <!-- 顶部内容 -->
         <div class="mt-8 md:mt-20 mx-auto md:mx-0 text-center md:text-left w-full md:w-1/2 md:ml-[45%]">
-            <!-- Badge -->
+            <!-- 徽章 -->
             <button class="inline-block px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-green-500/30 bg-green-500/10 text-white mb-4 md:mb-6 hover:bg-green-500/20 transition-all text-sm md:text-base">
-                New Nation
+                新国度
             </button>
 
-            <!-- Heading -->
+            <!-- 标题 -->
             <h1 class="text-4xl md:text-7xl font-bold text-white leading-tight mb-6 md:mb-8">
-                Transforming Daily
+                将日常健康
                 <br/>
-                Wellness into Wealth
+                转化为财富
                 <br/>
-                Beyond Boundaries
+                超越边界
             </h1>
 
-            <!-- Explore Button -->
+            <!-- 探索按钮 -->
             <button 
             onclick="document.getElementById('welcome').scrollIntoView({behavior: 'smooth'})"
             class="mb-12 md:mb-0 px-6 py-2.5 md:px-8 md:py-3 rounded-full border border-green-500/30 bg-green-500/10 text-white hover:bg-green-500/20 transition-all text-sm md:text-base cursor-pointer">
-            Explore
+            探索
             </button>
         </div>
 
-        <!-- Bottom Section -->
+        <!-- 底部部分 -->
         <div class="mb-8 md:mb-20">
             <div class="flex flex-col md:flex-row justify-between items-center md:items-end gap-6 md:gap-0">
-                <!-- Stats -->
+                <!-- 数据 -->
                 <div class="text-center md:text-left">
                     <h2 class="text-4xl md:text-5xl text-white">265K+</h2>
-                    <p class="text-gray-400 text-sm md:text-base">Global Members</p>
+                    <p class="text-gray-400 text-sm md:text-base">全球会员</p>
                 </div>
 
-                <!-- Feature Cards -->
+                <!-- 功能卡片 -->
                 <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8">
                     <div class="flex -space-x-4">
-                        <!-- Feature Images -->
+                        <!-- 功能图标 -->
                         <img src="./assets/images/hero-icon-1.png" alt="" class="w-12 h-12 md:w-14 md:h-14 rounded-lg object-cover bg-black/50 border border-green-500/30 relative z-30">
                         <img src="./assets/images/hero-icon-2.png" alt="" class="w-12 h-12 md:w-14 md:h-14 rounded-lg object-cover bg-black/50 border border-green-500/30 relative z-20">
                         <img src="./assets/images/hero-icon-3.png" alt="" class="w-12 h-12 md:w-14 md:h-14 rounded-lg object-cover bg-black/50 border border-green-500/30 relative z-10">
                     </div>
                     
                     <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8 text-center md:text-left">
-                        <!-- Left text -->
-                        <h3 class="text-white text-lg md:text-xl font-bold">UNLOCK A HEALTHIER,<br class="hidden md:block"/> WEALTHIER FUTURE.</h3>
+                        <!-- 左侧文字 -->
+                        <h3 class="text-white text-lg md:text-xl font-bold">解锁健康，<br class="hidden md:block"/> 财富未来。</h3>
 
-                        <!-- Vertical line -->
+                        <!-- 垂直线 -->
                         <div class="hidden md:block w-px h-12 bg-green-500/30"></div>
 
-                        <!-- Horizontal line for mobile -->
+                        <!-- 手机的水平线 -->
                         <div class="md:hidden w-32 h-px bg-green-500/30"></div>
 
-                        <!-- Right text -->
-                        <p class="text-gray-400 max-w-xs text-sm md:text-base">Embark on a life-changing journey with a platform that prioritizes your health and wealth growth.</p>
+                        <!-- 右侧文字 -->
+                        <p class="text-gray-400 max-w-xs text-sm md:text-base">通过优先考虑健康与财富的平台，踏上改变人生的旅程。</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Decorative Sphere -->
+    <!-- 装饰球 -->
     <div class="absolute left-0 top-0 w-[300px] md:w-[599px] h-[500px] md:h-[943px] -translate-x-1/3 md:-translate-x-1/4">
         <img src="assets/images/hero-sphere.png" alt="" class="w-full h-full object-contain opacity-50 md:opacity-100">
     </div>
 
-    <!-- Navigation Dots -->
+    <!-- 导航点 -->
     <div class="absolute left-4 md:left-12 bottom-4 md:bottom-12">
-        <img src="./assets/images/hero-dot.png" alt="Navigation dots" class="h-24 md:h-32 object-contain cursor-pointer">
+        <img src="./assets/images/hero-dot.png" alt="导航点" class="h-24 md:h-32 object-contain cursor-pointer">
     </div>
   </section>
 
-  <!-- Welcome Section -->
+  <!-- 欢迎部分 -->
   <section id="welcome" class="py-20 relative overflow-hidden">
     <div class="container mx-auto px-4 md:px-6">
-      <!-- About Us Badge -->
+      <!-- 关于我们徽章 -->
       <div class="flex justify-center mb-4 md:mb-6">
         <button class="inline-block px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-green-500/30 bg-green-500/10 text-white hover:bg-green-500/20 transition-all text-sm md:text-base">
-            About us
+            关于我们
         </button>
       </div>
 
-      <!-- Heading Container -->
+      <!-- 标题容器 -->
       <div class="text-center max-w-5xl mx-auto mb-16">
-        <h2 class="text-4xl md:text-6xl font-medium text-white mb-4">Welcome to New Nation,</h2>
-        <h3 class="text-3xl md:text-5xl font-medium text-white">Redefining Possibilities, Together.</h3>
+        <h2 class="text-4xl md:text-6xl font-medium text-white mb-4">欢迎来到新国度</h2>
+        <h3 class="text-3xl md:text-5xl font-medium text-white">共同重新定义可能性。</h3>
       </div>
 
-      <!-- Content Container -->
+      <!-- 内容容器 -->
       <div class="flex flex-col md:flex-row items-center gap-12 md:gap-20">
-        <!-- Logo Container -->
+        <!-- 徽标容器 -->
         <div class="w-full md:w-1/2 relative">
-          <!-- Glow Overlay -->
+          <!-- 光晕覆盖 -->
           <div class="absolute inset-0 flex items-center justify-center">
             <div class="w-[400px] h-[400px] rounded-full bg-green-500/20 blur-[100px]"></div>
           </div>
           
-          <!-- Coin Image -->
+          <!-- 硬币图像 -->
           <img 
             src="./assets/images/welcome-coin-1.png" 
-            alt="New Nation Coin" 
+            alt="新国度硬币" 
             class="w-full max-w-lg mx-auto relative z-10 glow-effect"
             style="filter: drop-shadow(0 0 20px rgba(34, 197, 94, 0.3));"
           >
         </div>
 
-        <!-- Text Container -->
+        <!-- 文本容器 -->
         <div class="w-full md:w-1/2">
           <p class="text-white/90 text-lg md:text-xl leading-relaxed">
-            New Nation (NN) is a cutting-edge technology platform that blends digital and physical mining using advanced wearable devices. Our flagship solution creates an ecosystem where users can earn rewards through their daily activities, promoting a healthier lifestyle while generating income in the form of our native cryptocurrency, NNC (New Nation Coin). We aim to build a sustainable digital economy where technology turns everyday actions into valuable financial opportunities for a global community.
+            新国度（NN）是一种融合数字与物理挖矿的尖端技术平台，采用先进的可穿戴设备创建生态系统，让用户通过日常活动赚取奖励，既促进健康生活方式，也创造收入。我们致力于构建可持续数字经济，将技术转化为经济价值。
           </p>
         </div>
       </div>
     </div>
-
-    <!-- Glow Effects -->
-    <!-- <div class="absolute inset-0 bg-gradient-to-br from-green-900/30 to-transparent pointer-events-none"></div> -->
   </section>
 
-  <!-- New Era Section -->
+  <!-- 新时代部分 -->
   <section class="py-20 relative overflow-hidden">
     <div class="container mx-auto px-4 md:px-6">
-      <!-- Heading -->
+      <!-- 标题 -->
       <h2 class="text-4xl md:text-6xl font-semibold text-white text-center mb-12 md:mb-16">
-        A New Era Starts Here
+        新时代从这里开始
       </h2>
 
-      <!-- Feature Card -->
+      <!-- 功能卡片 -->
       <div class="relative rounded-3xl overflow-hidden">
-        <!-- Background Image -->
+        <!-- 背景图 -->
         <img 
           src="./assets/images/era-image.png" 
-          alt="Smartwatch in city" 
+          alt="城市中的智能手表" 
           class="w-full h-[600px] object-cover rounded-3xl"
         >
         
-        <!-- Content Overlay -->
+        <!-- 内容覆盖 -->
         <div class="absolute inset-0 p-12 flex flex-col justify-end bg-gradient-to-t from-black/50 to-transparent">
           <h3 class="text-3xl md:text-4xl font-bold text-white mb-4">
-            The Future of Money Starts with<br/> Your Steps.
+            财富的未来<br/> 从你的脚步开始。
           </h3>
           <p class="text-lg md:text-xl text-white/90 max-w-xl">
-            Turn activity into income with New Nation. Mine Coins, stay healthy, and earn as you move.
+            与新国度一起，将运动转化为收入。挖矿硬币，保持健康，动起来就能赚。
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Benefits Section -->
+  <!-- 优势部分 -->
   <section class="py-20 relative overflow-hidden">
     <div class="container mx-auto px-4 md:px-6">
-      <!-- Left Column -->
+      <!-- 左列 -->
       <div class="flex flex-col md:flex-row justify-between gap-12">
         <div class="w-full md:w-1/2">
-          <!-- Badge -->
+          <!-- 徽章 -->
           <button class="inline-block px-3 py-1.5 rounded-full border border-green-500/30 bg-green-500/10 text-white mb-6 text-sm">
-              Why Choose us?
+              为什么选择我们？
           </button>
 
-          <!-- Main Heading -->
+          <!-- 主要标题 -->
           <h2 class="text-4xl md:text-6xl font-medium text-white mb-8">
-            Maximize Wealth<br/> 
-            Potential, Minimize<br/> 
-            Health Risk.
+            最大化财富潜力，<br/> 
+            最小化健康风险。
           </h2>
 
-          <!-- Download Buttons -->
+          <!-- 下载按钮 -->
           <div class="flex flex-col gap-4">
             <button class="inline-flex w-[250px] px-6 py-3 rounded-full border border-green-500/30 bg-green-500/10 text-white hover:bg-green-500/20 transition-all text-base text-center justify-center">
-                Download for Android
+                下载安卓版本
             </button>
             <button class="inline-flex w-[250px] px-6 py-3 rounded-full border border-green-500/30 bg-green-500/10 text-white hover:bg-green-500/20 transition-all text-base text-center justify-center">
-                Download for iOS
+                下载iOS版本
             </button>
           </div>
         </div>
 
-        <!-- Right Column -->
+        <!-- 右列 -->
         <div class="w-full md:w-1/2 flex flex-col gap-6">
-          <!-- First Card -->
+          <!-- 第一张卡片 -->
           <div class="rounded-3xl overflow-hidden relative h-[280px]">
-            <!-- Base Background Image -->
+            <!-- 背景图 -->
             <img 
               src="./assets/images/benefit-shoes.png" 
               alt="" 
               class="absolute inset-0 w-full h-full object-cover"
             >
             
-            <!-- Overlay Image -->
+            <!-- 叠加图 -->
             <img 
               src="./assets/images/benefits-shoes-overlay.png" 
               alt="" 
               class="absolute inset-0 w-full h-full object-cover z-[1]"
             >
             
-            <!-- Gradient Overlay -->
+            <!-- 渐变覆盖 -->
             <div class="absolute inset-0 bg-gradient-to-r from-black/30 to-transparent z-[2]"></div>
             
-            <!-- Content -->
+            <!-- 内容 -->
             <div class="relative z-[3] p-8 h-full flex flex-col justify-end">
-              <!-- Left Side -->
               <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 md:gap-8">
                 <h3 class="text-2xl md:text-3xl font-medium text-white">
-                  Earn While
-                  Staying
-                  Healthy
+                  一边保持健康，<br/> 一边赚钱
                 </h3>
 
-                <!-- Right Side -->
                 <ul class="text-white/90 space-y-2 max-w-full md:max-w-[400px]">
                   <li class="flex items-start gap-2">
                     <span class="text-green-500">•</span>
-                    Turn physical activity, like daily steps, into NNC rewards.
+                    将日常步数等活动转化为NNC奖励。
                   </li>
                   <li class="flex items-start gap-2">
                     <span class="text-green-500">•</span>
-                    Achieve financial independence through healthy living.
+                    通过健康生活实现财务独立。
                   </li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <!-- Second Card -->
+          <!-- 第二张卡片 -->
           <div class="rounded-3xl overflow-hidden relative h-auto md:h-[350px] bg-black/20 border border-green-500/30">
-            <!-- Content -->
+            <!-- 内容 -->
             <div class="p-8 h-full flex flex-col">
-              <!-- Image at top for both mobile and desktop -->
+              <!-- 顶部图像 -->
               <div class="mb-8">
                 <img 
                   src="./assets/images/benefit-infinity.png" 
@@ -279,22 +271,20 @@
                 >
               </div>
               
-              <!-- Content below image -->
+              <!-- 图片下方内容 -->
               <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 md:gap-8">
                 <h3 class="text-2xl md:text-3xl font-medium text-white">
-                  Unique
-                  Crypto
-                  Ecosystem
+                  独特的加密货币生态系统
                 </h3>
 
                 <ul class="text-white/90 space-y-2 max-w-full md:max-w-[400px]">
                   <li class="flex items-start gap-2">
                     <span class="text-green-500">•</span>
-                    Earn New Nation Coins with the option to stake, trade, or withdraw.
+                    通过NNC赚取收益，可质押、交易或提现。
                   </li>
                   <li class="flex items-start gap-2">
                     <span class="text-green-500">•</span>
-                    Transparent and secure blockchain technology.
+                    透明且安全的区块链技术。
                   </li>
                 </ul>
               </div>
@@ -305,102 +295,99 @@
     </div>
   </section>
 
-  <!-- Ecosystem Section -->
+  <!-- 生态系统部分 -->
   <section class="py-20 relative overflow-hidden">
     <div class="container mx-auto px-4 md:px-6">
-      <!-- Heading and Description -->
+      <!-- 标题和描述 -->
       <div class="text-center max-w-4xl mx-auto mb-12">
         <h2 class="text-4xl md:text-6xl font-bold text-white mb-6">
-          Earn Beyond Limits,<br/>
-          Grow Beyond Borders.
+          打破限制赚取收益，<br/>
+          超越国界实现增长。
         </h2>
         <p class="text-white/90 text-lg md:text-xl">
-          The New Nation Coin (NNC) ecosystem features a dual-token structure that balances 
-          stability and growth, consisting of two key components
+          新国度硬币（NNC）生态系统采用双代币结构，平衡稳定与增长。
         </p>
         <button 
           onclick="window.open('assets/docs/New Nation Whitepaper.pdf', '_blank')"
           class="mt-8 px-6 py-3 rounded-full border border-green-500/30 bg-green-500/10 text-white hover:bg-green-500/20 transition-all">
-          Read Whitepaper
+          阅读白皮书
         </button>
       </div>
 
-      <!-- Ecosystem Diagram Image -->
+      <!-- 生态系统图解 -->
       <div class="max-w-6xl mx-auto">
         <img 
           src="assets/images/ecosystem-diagram.png" 
-          alt="New Nation Ecosystem Diagram" 
+          alt="新国度生态系统图解" 
           class="w-full h-auto"
         >
       </div>
     </div>
   </section>
 
-  <!-- Roadmap Section -->
+  <!-- 路线图部分 -->
   <section class="py-20 relative overflow-hidden">
     <div class="container mx-auto px-4 md:px-6">
-      <!-- Heading and Description -->
+      <!-- 标题和描述 -->
       <div class="text-center max-w-4xl mx-auto mb-16">
         <h2 class="text-4xl md:text-6xl font-medium text-white mb-6">
-          New Nation Roadmap
+          新国度路线图
         </h2>
         <p class="text-white/90 text-lg">
-          Utilizing state-of-the-art wearable technology, New Nation enables users to mine coins 
-          based on their daily physical activity. By turning everyday movement into economic 
-          opportunity, we encourage users to lead healthier lifestyles while earning rewards.
+          通过先进的可穿戴技术，新国度让用户能够根据日常身体活动挖矿赚取硬币。将日常行动转化为经济机会，鼓励用户健康生活并获取奖励。
         </p>
       </div>
 
-      <!-- Roadmap Image -->
+      <!-- 路线图图像 -->
       <div class="max-w-4xl mx-auto relative">
         <img 
-          src="assets/images/roadmap.png" 
-          alt="New Nation Roadmap" 
+          src="./assets/images/roadmap.png" 
+          alt="新国度路线图" 
           class="w-full h-auto"
         >
       </div>
 
-       <!-- Bottom Logo -->
+       <!-- 底部 Logo -->
        <div class="flex flex-col items-center mt-8">
         <img 
-          src="assets/images/chat-icon.png" 
-          alt="New Nation Logo" 
+          src="./assets/images/chat-icon.png" 
+          alt="新国度Logo" 
           class="relative glow-effect"
           style="filter: drop-shadow(0 0 20px rgba(34, 197, 94, 0.5));"
         >
         <p class="text-center text-white/50 mt-4 text-sm">
-          Press and hold the icon to contact us
+          长按图标联系我们
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- 页脚 -->
   <footer class="py-6 bg-black/20 border-t border-green-500/10">
     <div class="container mx-auto px-4 md:px-6">
       <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <!-- Left: Logo -->
+        <!-- 左侧 Logo -->
         <div class="flex items-center">
-          <img src="./assets/images/logo.png" alt="New Nation" class="h-8">
+          <img src="./assets/images/logo.png" alt="新国度" class="h-8">
         </div>
 
-        <!-- Right: Language Options -->
+        <!-- 右侧语言选项 -->
         <div class="flex flex-col items-center md:items-end gap-2">
-          <span class="text-white/50 text-sm">Languages</span>
+          <span class="text-white/50 text-sm">语言</span>
           <div class="flex items-center gap-3">
-            <a href="/index.html" class="text-white hover:text-green-500 text-sm">EN</a>
-            <a href="/index_id.html" class="text-white/50 hover:text-green-500 text-sm">ID</a>
-            <a href="/index_ind.html" class="text-white/50 hover:text-green-500 text-sm">IND</a>
-            <a href="/index_cn.html" class="text-white/50 hover:text-green-500 text-sm">CN</a>
-            <a href="/index_ko.html" class="text-white/50 hover:text-green-500 text-sm">KO</a>
-            <a href="/index_ja.html" class="text-white/50 hover:text-green-500 text-sm">JA</a>
+            <a href="#" class="text-white/50 hover:text-green-500 text-sm">英文</a>
+            <a href="#" class="text-white/50 hover:text-green-500 text-sm">印尼文</a>
+            <a href="#" class="text-white/50 hover:text-green-500 text-sm">印度文</a>
+            <a href="#" class="text-white hover:text-green-500 text-sm">简体中文</a>
+            <a href="#" class="text-white/50 hover:text-green-500 text-sm">韩文</a>
+            <a href="#" class="text-white/50 hover:text-green-500 text-sm">日文</a>
           </div>
         </div>
       </div>
 
-      <!-- Copyright -->
+      <!-- 版权信息 -->
       <div class="text-center mt-6">
-        <p class="text-white/50 text-sm">Copyright © <span id="currentYear"></span> New Nation. All Rights Reserved.</p>
+        <p class="text-white/50 text-sm">版权所有 © <span id="currentYear"></span> 新国度. 保留所有权利。</p>
       </div>
     </div>
   </footer>
