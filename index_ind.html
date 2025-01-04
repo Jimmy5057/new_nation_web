@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,258 +11,261 @@
   <link rel="icon" href="assets/images/app-icon.png" type="image/x-icon">
 </head>
 <body>
-  <!-- 主图部分 -->
+  <!-- Hero Section -->
   <section class="relative overflow-hidden">
-    <!-- 导航 -->
+    <!-- Navigation -->
     <nav class="container mx-auto px-4 md:px-6 py-6 md:py-8 flex justify-between items-center relative z-50">
         <!-- Logo -->
         <div class="flex items-center">
-            <img src="./assets/images/logo.png" alt="新国度" class="h-8 md:h-12">
+            <img src="./assets/images/logo.png" alt="New Nation" class="h-8 md:h-12">
         </div>
         
         <!-- Language Selector -->
         <div class="relative">
-          <button id="languageButton" class="px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-green-500/30 bg-green-500/10 text-white flex items-center gap-2 text-sm md:text-base">
-              <span id="selectedLanguage">CN</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 md:w-4 md:h-4">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-          </button>
-          
-          <!-- Dropdown Menu -->
-          <div id="languageDropdown" class="hidden absolute top-full right-0 mt-2 w-24 bg-black/90 border border-green-500/30 rounded-lg overflow-hidden">
-              <a href="/index.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">EN</a>
-              <a href="/index_id.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">ID</a>
-              <a href="/index_ind.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">IND</a>
-              <a href="/index_cn.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">CN</a>
-              <a href="/index_ko.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">KO</a>
-              <a href="/index_ja.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">JA</a>
-          </div>
-      </div>
+            <button id="languageButton" class="px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-green-500/30 bg-green-500/10 text-white flex items-center gap-2 text-sm md:text-base">
+                <span id="selectedLanguage">IND</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 md:w-4 md:h-4">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </button>
+            
+            <!-- Dropdown Menu -->
+            <div id="languageDropdown" class="hidden absolute top-full right-0 mt-2 w-24 bg-black/90 border border-green-500/30 rounded-lg overflow-hidden">
+                <a href="/index.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">EN</a>
+                <a href="/index_id.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">ID</a>
+                <a href="/index_ind.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">IND</a>
+                <a href="/index_cn.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">CN</a>
+                <a href="/index_ko.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">KO</a>
+                <a href="/index_ja.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">JA</a>
+            </div>
+        </div>
     </nav>
 
-    <!-- 主内容 -->
+    <!-- Main Hero Content -->
     <div class="container mx-auto px-4 md:px-6 md:h-[calc(100vh-88px)] flex flex-col justify-between relative z-10">
-        <!-- 顶部内容 -->
+        <!-- Top Content -->
         <div class="mt-8 md:mt-20 mx-auto md:mx-0 text-center md:text-left w-full md:w-1/2 md:ml-[45%]">
-            <!-- 徽章 -->
+            <!-- Badge -->
             <button class="inline-block px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-green-500/30 bg-green-500/10 text-white mb-4 md:mb-6 hover:bg-green-500/20 transition-all text-sm md:text-base">
                 New Nation
             </button>
 
-            <!-- 标题 -->
+            <!-- Heading -->
             <h1 class="text-4xl md:text-7xl font-bold text-white leading-tight mb-6 md:mb-8">
-                将日常健康
+                தினசரி ஆரோக்கியத்தை 
                 <br/>
-                转化为财富
+                செல்வமாக மாற்றுதல்
                 <br/>
-                超越边界
+                எல்லைகளுக்கு அப்பால்
             </h1>
 
-            <!-- 探索按钮 -->
+            <!-- Explore Button -->
             <button 
             onclick="document.getElementById('welcome').scrollIntoView({behavior: 'smooth'})"
             class="mb-12 md:mb-0 px-6 py-2.5 md:px-8 md:py-3 rounded-full border border-green-500/30 bg-green-500/10 text-white hover:bg-green-500/20 transition-all text-sm md:text-base cursor-pointer">
-            探索
+            ஆராயுங்கள்
             </button>
         </div>
 
-        <!-- 底部部分 -->
+        <!-- Bottom Section -->
         <div class="mb-8 md:mb-20">
             <div class="flex flex-col md:flex-row justify-between items-center md:items-end gap-6 md:gap-0">
-                <!-- 数据 -->
+                <!-- Stats -->
                 <div class="text-center md:text-left">
                     <h2 class="text-4xl md:text-5xl text-white">265K+</h2>
-                    <p class="text-gray-400 text-sm md:text-base">全球会员</p>
+                    <p class="text-gray-400 text-sm md:text-base">உலகளாவிய உறுப்பினர்கள்</p>
                 </div>
 
-                <!-- 功能卡片 -->
+                <!-- Feature Cards -->
                 <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8">
                     <div class="flex -space-x-4">
-                        <!-- 功能图标 -->
+                        <!-- Feature Images -->
                         <img src="./assets/images/hero-icon-1.png" alt="" class="w-12 h-12 md:w-14 md:h-14 rounded-lg object-cover bg-black/50 border border-green-500/30 relative z-30">
                         <img src="./assets/images/hero-icon-2.png" alt="" class="w-12 h-12 md:w-14 md:h-14 rounded-lg object-cover bg-black/50 border border-green-500/30 relative z-20">
                         <img src="./assets/images/hero-icon-3.png" alt="" class="w-12 h-12 md:w-14 md:h-14 rounded-lg object-cover bg-black/50 border border-green-500/30 relative z-10">
                     </div>
                     
                     <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8 text-center md:text-left">
-                        <!-- 左侧文字 -->
-                        <h3 class="text-white text-lg md:text-xl font-bold">解锁健康，<br class="hidden md:block"/> 财富未来。</h3>
+                        <!-- Left text -->
+                        <h3 class="text-white text-lg md:text-xl font-bold">ஒரு ஆரோக்கியமான,<br class="hidden md:block"/> செல்வமிகு எதிர்காலத்தை திறக்குங்கள்.</h3>
 
-                        <!-- 垂直线 -->
+                        <!-- Vertical line -->
                         <div class="hidden md:block w-px h-12 bg-green-500/30"></div>
 
-                        <!-- 手机的水平线 -->
+                        <!-- Horizontal line for mobile -->
                         <div class="md:hidden w-32 h-px bg-green-500/30"></div>
 
-                        <!-- 右侧文字 -->
-                        <p class="text-gray-400 max-w-xs text-sm md:text-base">通过优先考虑健康与财富的平台，踏上改变人生的旅程。</p>
+                        <!-- Right text -->
+                        <p class="text-gray-400 max-w-xs text-sm md:text-base">உங்கள் ஆரோக்கியத்தையும் செல்வ வளர்ச்சியையும் முக்கியமாகக் கொண்ட ஒரு தளத்துடன் வாழ்க்கையை மாற்றும் பயணத்தைத் தொடங்குங்கள்.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- 装饰球 -->
+    <!-- Decorative Sphere -->
     <div class="absolute left-0 top-0 w-[300px] md:w-[599px] h-[500px] md:h-[943px] -translate-x-1/3 md:-translate-x-1/4">
         <img src="assets/images/hero-sphere.png" alt="" class="w-full h-full object-contain opacity-50 md:opacity-100">
     </div>
 
-    <!-- 导航点 -->
+    <!-- Navigation Dots -->
     <div class="absolute left-4 md:left-12 bottom-4 md:bottom-12">
-        <img src="./assets/images/hero-dot.png" alt="导航点" class="h-24 md:h-32 object-contain cursor-pointer">
+        <img src="./assets/images/hero-dot.png" alt="Navigation dots" class="h-24 md:h-32 object-contain cursor-pointer">
     </div>
   </section>
 
-  <!-- 欢迎部分 -->
+  <!-- Welcome Section -->
   <section id="welcome" class="py-20 relative overflow-hidden">
     <div class="container mx-auto px-4 md:px-6">
-      <!-- 关于我们徽章 -->
+      <!-- About Us Badge -->
       <div class="flex justify-center mb-4 md:mb-6">
         <button class="inline-block px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-green-500/30 bg-green-500/10 text-white hover:bg-green-500/20 transition-all text-sm md:text-base">
-            关于我们
+            எங்களை பற்றி
         </button>
       </div>
 
-      <!-- 标题容器 -->
+      <!-- Heading Container -->
       <div class="text-center max-w-5xl mx-auto mb-16">
-        <h2 class="text-4xl md:text-6xl font-medium text-white mb-4">欢迎来到新国度</h2>
-        <h3 class="text-3xl md:text-5xl font-medium text-white">共同重新定义可能性。</h3>
+        <h2 class="text-4xl md:text-6xl font-medium text-white mb-4">நியூ நேஷனுக்கு வரவேற்கிறோம்,</h2>
+        <h3 class="text-3xl md:text-5xl font-medium text-white">வாய்ப்புகளை மீண்டும் வரையறுப்போம், ஒன்றாக.</h3>
       </div>
 
-      <!-- 内容容器 -->
+      <!-- Content Container -->
       <div class="flex flex-col md:flex-row items-center gap-12 md:gap-20">
-        <!-- 徽标容器 -->
+        <!-- Logo Container -->
         <div class="w-full md:w-1/2 relative">
-          <!-- 光晕覆盖 -->
+          <!-- Glow Overlay -->
           <div class="absolute inset-0 flex items-center justify-center">
             <div class="w-[400px] h-[400px] rounded-full bg-green-500/20 blur-[100px]"></div>
           </div>
           
-          <!-- 硬币图像 -->
+          <!-- Coin Image -->
           <img 
             src="./assets/images/welcome-coin-1.png" 
-            alt="新国度硬币" 
+            alt="நியூ நேஷன் காய்" 
             class="w-full max-w-lg mx-auto relative z-10 glow-effect"
             style="filter: drop-shadow(0 0 20px rgba(34, 197, 94, 0.3));"
           >
         </div>
 
-        <!-- 文本容器 -->
+        <!-- Text Container -->
         <div class="w-full md:w-1/2">
           <p class="text-white/90 text-lg md:text-xl leading-relaxed">
-            新国度（NN）是一种融合数字与物理挖矿的尖端技术平台，采用先进的可穿戴设备创建生态系统，让用户通过日常活动赚取奖励，既促进健康生活方式，也创造收入。我们致力于构建可持续数字经济，将技术转化为经济价值。
+            நியூ நேஷன் (NN) என்பது மேம்பட்ட அணியக்கருவிகளைப் பயன்படுத்தி டிஜிட்டல் மற்றும் பிசியல்மயமாக்கலுடன் இணைக்கும் முன்னணி தொழில்நுட்ப தளம். எங்களின் பிரதான தீர்வு பயனர்கள் தங்கள் தினசரி செயல்பாடுகளின் மூலம் நன்மைகளைப் பெறும் ஒரு பரிமாணத்தை உருவாக்குகிறது, ஆரோக்கியமான வாழ்க்கை முறை ஊக்குவிக்கிறது மற்றும் நியூ நேஷன் காயின் (NNC) என்ற நாணயத்தில் வருமானத்தை உருவாக்குகிறது. டிக்னிடி ஆவணங்களால் உலகளாவிய சமூகத்துக்கு மாறும் பொருளாதாரத்தை உருவாக்குதல் எங்கள் நோக்கம்.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 新时代部分 -->
+  <!-- New Era Section -->
   <section class="py-20 relative overflow-hidden">
     <div class="container mx-auto px-4 md:px-6">
-      <!-- 标题 -->
+      <!-- Heading -->
       <h2 class="text-4xl md:text-6xl font-semibold text-white text-center mb-12 md:mb-16">
-        新时代从这里开始
+        புதிய யுகம் இங்கிருந்து துவங்குகிறது
       </h2>
 
-      <!-- 功能卡片 -->
+      <!-- Feature Card -->
       <div class="relative rounded-3xl overflow-hidden">
-        <!-- 背景图 -->
+        <!-- Background Image -->
         <img 
           src="./assets/images/era-image.png" 
-          alt="城市中的智能手表" 
+          alt="நகரத்தில் ஸ்மார்ட்வாட்ச்" 
           class="w-full h-[600px] object-cover rounded-3xl"
         >
         
-        <!-- 内容覆盖 -->
+        <!-- Content Overlay -->
         <div class="absolute inset-0 p-12 flex flex-col justify-end bg-gradient-to-t from-black/50 to-transparent">
           <h3 class="text-3xl md:text-4xl font-bold text-white mb-4">
-            财富的未来<br/> 从你的脚步开始。
+            பணத்தின் எதிர்காலம் உங்கள்<br/>படிகள் மூலம் துவங்குகிறது.
           </h3>
           <p class="text-lg md:text-xl text-white/90 max-w-xl">
-            与新国度一起，将运动转化为收入。挖矿硬币，保持健康，动起来就能赚。
+            நியூ நேஷனுடன் செயல்பாட்டை வருமானமாக மாற்றுங்கள். காயின்களைத் துளைத்தல், ஆரோக்கியமாக இருப்பது, மற்றும் இயக்கத்தின் போது வருமானம் பெறுதல்.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 优势部分 -->
+  <!-- Benefits Section -->
   <section class="py-20 relative overflow-hidden">
     <div class="container mx-auto px-4 md:px-6">
-      <!-- 左列 -->
+      <!-- Left Column -->
       <div class="flex flex-col md:flex-row justify-between gap-12">
         <div class="w-full md:w-1/2">
-          <!-- 徽章 -->
+          <!-- Badge -->
           <button class="inline-block px-3 py-1.5 rounded-full border border-green-500/30 bg-green-500/10 text-white mb-6 text-sm">
-              为什么选择我们？
+              ஏன் எங்களை தேர்வு செய்கிறீர்கள்?
           </button>
 
-          <!-- 主要标题 -->
+          <!-- Main Heading -->
           <h2 class="text-4xl md:text-6xl font-medium text-white mb-8">
-            最大化财富潜力，<br/> 
-            最小化健康风险。
+            செல்வ திறன்களை அதிகரிக்கவும்,<br/> 
+            ஆரோக்கிய ஆபத்துகளை குறைக்கவும்.
           </h2>
 
-          <!-- 下载按钮 -->
+          <!-- Download Buttons -->
           <div class="flex flex-col gap-4">
             <button class="inline-flex w-[250px] px-6 py-3 rounded-full border border-green-500/30 bg-green-500/10 text-white hover:bg-green-500/20 transition-all text-base text-center justify-center">
-                下载安卓版本
+                ஆண்ட்ராய்டுக்காக பதிவிறக்கவும்
             </button>
             <button class="inline-flex w-[250px] px-6 py-3 rounded-full border border-green-500/30 bg-green-500/10 text-white hover:bg-green-500/20 transition-all text-base text-center justify-center">
-                下载iOS版本
+                iOS-க்கு பதிவிறக்கவும்
             </button>
           </div>
         </div>
 
-        <!-- 右列 -->
+        <!-- Right Column -->
         <div class="w-full md:w-1/2 flex flex-col gap-6">
-          <!-- 第一张卡片 -->
+          <!-- First Card -->
           <div class="rounded-3xl overflow-hidden relative h-[280px]">
-            <!-- 背景图 -->
+            <!-- Base Background Image -->
             <img 
               src="./assets/images/benefit-shoes.png" 
               alt="" 
               class="absolute inset-0 w-full h-full object-cover"
             >
             
-            <!-- 叠加图 -->
+            <!-- Overlay Image -->
             <img 
               src="./assets/images/benefits-shoes-overlay.png" 
               alt="" 
               class="absolute inset-0 w-full h-full object-cover z-[1]"
             >
             
-            <!-- 渐变覆盖 -->
+            <!-- Gradient Overlay -->
             <div class="absolute inset-0 bg-gradient-to-r from-black/30 to-transparent z-[2]"></div>
             
-            <!-- 内容 -->
+            <!-- Content -->
             <div class="relative z-[3] p-8 h-full flex flex-col justify-end">
+              <!-- Left Side -->
               <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 md:gap-8">
                 <h3 class="text-2xl md:text-3xl font-medium text-white">
-                  一边保持健康，<br/> 一边赚钱
+                  ஆரோக்கியமாக இருக்கும்போது<br/> 
+                  வருமானம் ஈட்டுங்கள்
                 </h3>
 
+                <!-- Right Side -->
                 <ul class="text-white/90 space-y-2 max-w-full md:max-w-[400px]">
                   <li class="flex items-start gap-2">
                     <span class="text-green-500">•</span>
-                    将日常步数等活动转化为NNC奖励。
+                    தினசரி நடைபாதைகள் போன்ற உடல் செயல்பாடுகளை NNC பரிசாக மாற்றுங்கள்.
                   </li>
                   <li class="flex items-start gap-2">
                     <span class="text-green-500">•</span>
-                    通过健康生活实现财务独立。
+                    ஆரோக்கியமான வாழ்க்கை முறை மூலம் நிதி சுதந்திரத்தை அடையுங்கள்.
                   </li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <!-- 第二张卡片 -->
+          <!-- Second Card -->
           <div class="rounded-3xl overflow-hidden relative h-auto bg-black/20 border border-green-500/30">
             <!-- Content -->
             <div class="p-8 h-full flex flex-col">
-                <!-- Image at top -->
+                <!-- Image at top for both mobile and desktop -->
                 <div class="mb-8">
                     <img 
                         src="./assets/images/benefit-infinity.png" 
@@ -274,17 +277,18 @@
                 <!-- Content below image -->
                 <div class="flex flex-col md:flex-row justify-between items-start gap-4 md:gap-8">
                     <h3 class="text-2xl md:text-3xl font-medium text-white md:w-1/3">
-                        独特的加密货币生态系统
+                        தனித்துவமான கிரிப்டோ
+                        பருவக்கோளம்
                     </h3>
 
                     <ul class="text-white/90 space-y-2 md:w-2/3">
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">•</span>
-                            <span>通过NNC赚取收益，可质押、交易或提现。</span>
+                            <span>புதிய நியூ நேஷன் நாணயங்களைப் பெற்று அவற்றை சேமிக்கவும், பரிமாற்றவும், அல்லது மீட்கவும்.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">•</span>
-                            <span>透明且安全的区块链技术。</span>
+                            <span>தெளிவான மற்றும் பாதுகாப்பான பிளாக்செயின் தொழில்நுட்பம்.</span>
                         </li>
                     </ul>
                 </div>
@@ -295,80 +299,84 @@
     </div>
   </section>
 
-  <!-- 生态系统部分 -->
+  <!-- Ecosystem Section -->
   <section class="py-20 relative overflow-hidden">
     <div class="container mx-auto px-4 md:px-6">
-      <!-- 标题和描述 -->
+      <!-- Heading and Description -->
       <div class="text-center max-w-4xl mx-auto mb-12">
         <h2 class="text-4xl md:text-6xl font-bold text-white mb-6">
-          打破限制赚取收益，<br/>
-          超越国界实现增长。
+          எல்லைகளைத் தாண்டி வெற்றி,<br/>
+          எல்லைகளை மீறி வளர்ச்சி.
         </h2>
         <p class="text-white/90 text-lg md:text-xl">
-          新国度硬币（NNC）生态系统采用双代币结构，平衡稳定与增长。
+          நியூ நேஷன் நாணயத்தின் (NNC) பருவக்கோளத்தில், 
+          நிலைத்தன்மை மற்றும் வளர்ச்சியை சமநிலைப்படுத்தும் இரட்டை-நாணய அமைப்பு உள்ளது, 
+          இது இரண்டு முக்கிய பகுதிகளை உள்ளடக்கியது.
         </p>
         <button 
           onclick="window.open('assets/docs/New Nation Whitepaper.pdf', '_blank')"
           class="mt-8 px-6 py-3 rounded-full border border-green-500/30 bg-green-500/10 text-white hover:bg-green-500/20 transition-all">
-          阅读白皮书
+          வெள்ளைநூலைப் படிக்கவும்
         </button>
       </div>
 
-      <!-- 生态系统图解 -->
+      <!-- Ecosystem Diagram Image -->
       <div class="max-w-6xl mx-auto">
         <img 
           src="assets/images/ecosystem-diagram.png" 
-          alt="新国度生态系统图解" 
+          alt="நியூ நேஷன் பருவக்கோளம் வரைபடம்" 
           class="w-full h-auto"
         >
       </div>
     </div>
   </section>
 
-  <!-- 路线图部分 -->
+  <!-- Roadmap Section -->
   <section class="py-20 relative overflow-hidden">
     <div class="container mx-auto px-4 md:px-6">
-      <!-- 标题和描述 -->
+      <!-- Heading and Description -->
       <div class="text-center max-w-4xl mx-auto mb-16">
         <h2 class="text-4xl md:text-6xl font-medium text-white mb-6">
-          新国度路线图
+          நியூ நேஷன் வழிகாட்டுதல்
         </h2>
         <p class="text-white/90 text-lg">
-          通过先进的可穿戴技术，新国度让用户能够根据日常身体活动挖矿赚取硬币。将日常行动转化为经济机会，鼓励用户健康生活并获取奖励。
+          சிறந்த உடுத்தக்கூடிய தொழில்நுட்பத்தை பயன்படுத்தி, நியூ நேஷன் தினசரி உடல் செயல்பாட்டின் அடிப்படையில் நாணயங்களைச் சுரக்க 
+          பயனர்களை அனுமதிக்கிறது. தினசரி இயக்கத்தை பொருளாதார வாய்ப்பாக மாற்றுவதன் மூலம், 
+          பயனர்களை ஆரோக்கியமான வாழ்க்கை முறைகளைத் தேர்ந்தெடுக்க ஊக்குவிக்கிறோம்.
         </p>
       </div>
 
-      <!-- 路线图图像 -->
+      <!-- Roadmap Image -->
       <div class="max-w-4xl mx-auto relative">
         <img 
-          src="./assets/images/roadmap.png" 
-          alt="新国度路线图" 
+          src="assets/images/roadmap.png" 
+          alt="நியூ நேஷன் வழிகாட்டுதல் வரைபடம்" 
           class="w-full h-auto"
         >
       </div>
 
-       <!-- 底部 Logo -->
+       <!-- Bottom Logo -->
        <div class="flex flex-col items-center mt-8">
         <img 
-          src="./assets/images/chat-icon.png" 
-          alt="新国度Logo" 
+          src="assets/images/chat-icon.png" 
+          alt="நியூ நேஷன் லோகோ" 
           class="relative glow-effect"
           style="filter: drop-shadow(0 0 20px rgba(34, 197, 94, 0.5));"
         >
         <p class="text-center text-white/50 mt-4 text-sm">
-          长按图标联系我们
+          எங்களைத் தொடர்புகொள்ள ஐகானை அழுத்தவும் மற்றும் அழுத்தி பிடிக்கவும்
         </p>
       </div>
     </div>
   </section>
 
-  <!-- 页脚 -->
+  <!-- Footer -->
   <footer class="py-6 bg-black/20 border-t border-green-500/10">
     <div class="container mx-auto px-4 md:px-6">
       <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <!-- 左侧 Logo -->
+        <!-- Left: Logo -->
         <div class="flex items-center">
-          <img src="./assets/images/logo.png" alt="新国度" class="h-8">
+          <img src="./assets/images/logo.png" alt="New Nation" class="h-8">
         </div>
 
         <!-- Right: Language Options -->
@@ -377,17 +385,17 @@
           <div class="flex items-center gap-3">
             <a href="/index.html" class="text-white/50 hover:text-green-500 text-sm">EN</a>
             <a href="/index_id.html" class="text-white/50 hover:text-green-500 text-sm">ID</a>
-            <a href="/index_ind.html" class="text-white/50 hover:text-green-500 text-sm">IND</a>
-            <a href="/index_cn.html" class="text-white hover:text-green-500 text-sm">CN</a>
+            <a href="/index_ind.html" class="text-white hover:text-green-500 text-sm">IND</a>
+            <a href="/index_cn.html" class="text-white/50 hover:text-green-500 text-sm">CN</a>
             <a href="/index_ko.html" class="text-white/50 hover:text-green-500 text-sm">KO</a>
             <a href="/index_ja.html" class="text-white/50 hover:text-green-500 text-sm">JA</a>
           </div>
         </div>
       </div>
 
-      <!-- 版权信息 -->
+      <!-- Copyright -->
       <div class="text-center mt-6">
-        <p class="text-white/50 text-sm">版权所有 © <span id="currentYear"></span> 新国度. 保留所有权利。</p>
+        <p class="text-white/50 text-sm">பதிப்புரிமை © <span id="currentYear"></span> New Nation. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p>
       </div>
     </div>
   </footer>
