@@ -12,6 +12,11 @@
     line-height: 1.6;
   }
   
+  .backdrop-filter {
+    -webkit-backdrop-filter: blur(12px) !important;
+    backdrop-filter: blur(12px) !important;
+  }
+
   /* .container {
     width: 90%;
     max-width: 1200px;

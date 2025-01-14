@@ -217,13 +217,40 @@
           </h2>
 
           <!-- Download Buttons -->
-          <div class="flex flex-col gap-4">
-            <button class="inline-flex w-[250px] px-6 py-3 rounded-full border border-green-500/30 bg-green-500/10 text-white hover:bg-green-500/20 transition-all text-base text-center justify-center">
+          <div class="flex flex-col items-center md:items-start gap-4">
+            <button 
+                onclick="window.location.href='assets/apk/New Nation.apk'" 
+                class="inline-flex w-[250px] px-6 py-3 rounded-full border border-green-500/30 bg-green-500/10 text-white hover:bg-green-500/20 transition-all text-base text-center justify-center">
                 Download for Android
             </button>
-            <button class="inline-flex w-[250px] px-6 py-3 rounded-full border border-green-500/30 bg-green-500/10 text-white hover:bg-green-500/20 transition-all text-base text-center justify-center">
-                Download for iOS
-            </button>
+            <div class="relative mb-24 md:mb-0">
+                <button class="inline-flex w-[250px] px-6 py-3 rounded-full border border-green-500/30 bg-green-500/10 text-white hover:bg-green-500/20 transition-all text-base text-center justify-center backdrop-blur-md bg-opacity-20 bg-black/20 backdrop-filter">
+                    <span class="opacity-50">Download for iOS</span>
+                </button>
+                <div class="absolute top-full left-0 right-0 mt-4 text-center">
+                    <p class="text-white/70 text-sm mb-2">iOS Available at</p>
+                    <div class="inline-block bg-black/50 px-6 py-3 rounded-lg border border-green-500/30">
+                        <div class="flex justify-center gap-4 text-white">
+                            <div class="text-center">
+                                <span id="days" class="text-xl font-bold">--</span>
+                                <p class="text-xs text-white/70">Days</p>
+                            </div>
+                            <div class="text-center">
+                                <span id="hours" class="text-xl font-bold">--</span>
+                                <p class="text-xs text-white/70">Hours</p>
+                            </div>
+                            <div class="text-center">
+                                <span id="minutes" class="text-xl font-bold">--</span>
+                                <p class="text-xs text-white/70">Minutes</p>
+                            </div>
+                            <div class="text-center">
+                                <span id="seconds" class="text-xl font-bold">--</span>
+                                <p class="text-xs text-white/70">Seconds</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
           </div>
         </div>
 
