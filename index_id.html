@@ -387,14 +387,25 @@
         >
       </div>
 
-       <!-- Bottom Logo -->
-       <div class="flex flex-col items-center mt-8">
-        <img 
-          src="assets/images/chat-icon.png" 
-          alt="Logo New Nation" 
-          class="relative glow-effect"
-          style="filter: drop-shadow(0 0 20px rgba(34, 197, 94, 0.5));"
-        >
+      <!-- Bottom Logo -->
+      <div class="flex flex-col items-center mt-8">
+        <div class="relative cursor-pointer chat-container" id="chatButton">
+          <!-- Expandable Background -->
+          <div class="chat-expand absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 
+                      w-[400px] h-[150px] rounded-full border border-green-500/30 bg-black/80 
+                      flex items-center justify-between px-8
+                      opacity-0 pointer-events-none transition-all duration-500">
+            <span class="text-3xl text-white font-medium opacity-0 transition-opacity duration-300">Mari Berbicara</span>
+          </div>
+
+          <!-- Single Icon that will slide -->
+          <img 
+            src="assets/images/chat-icon.png" 
+            alt="Logo New Nation" 
+            class="w-[150px] h-[150px] relative glow-effect z-10 transition-all duration-500"
+            style="filter: drop-shadow(0 0 20px rgba(34, 197, 94, 0.5));"
+          >
+        </div>
         <p class="text-center text-white/50 mt-4 text-sm">
           Tekan dan tahan ikon untuk menghubungi kami
         </p>
@@ -462,6 +473,26 @@
       to {
         filter: drop-shadow(0 0 40px rgba(34, 197, 94, 0.5));
       }
+    }
+
+    .chat-container.holding .chat-expand {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+      pointer-events: auto;
+    }
+
+    .chat-container.holding .chat-expand span {
+      opacity: 1;
+      transition-delay: 0.1s;
+    }
+
+    .chat-container.holding .glow-effect {
+      transform: translateX(125px) rotate(360deg);
+    }
+
+    .chat-expand {
+      transform: translate(-50%, -50%) scale(0.8);
+      backdrop-filter: blur(8px);
     }
   </style>
 </body>
