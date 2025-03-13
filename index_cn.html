@@ -34,34 +34,51 @@
     <nav class="container mx-auto px-4 md:px-6 py-6 md:py-8 flex justify-between items-center relative z-50">
         <!-- Logo -->
         <div class="flex items-center">
-            <img src="./assets/images/logo.png" alt="新国度" class="h-8 md:h-12">
+            <img src="./assets/images/logo1.png" alt="新国度" class="w-48 md:w-72">
         </div>
         
-        <!-- Language Selector -->
-        <div class="relative">
-          <button id="languageButton" class="px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-green-500/30 bg-green-500/10 text-white flex items-center gap-2 text-sm md:text-base">
-              <span id="selectedLanguage">CN</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 md:w-4 md:h-4">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-          </button>
-          
-          <!-- Dropdown Menu -->
-          <div id="languageDropdown" class="hidden absolute top-full right-0 mt-2 w-24 bg-black/90 border border-green-500/30 rounded-lg overflow-hidden">
-              <a href="/index.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">EN</a>
-              <a href="/index_id.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">ID</a>
-              <a href="/index_ind.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">IND</a>
-              <a href="/index_cn.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">CN</a>
-              <a href="/index_ko.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">KO</a>
-              <a href="/index_ja.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">JA</a>
-          </div>
-      </div>
+        <!-- Right Side Container -->
+        <div class="flex items-center gap-3">
+            <!-- Price Display -->
+            <div class="hidden md:flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-green-500/30 bg-green-500/10 text-white">
+                <img src="./assets/images/nnc.png" alt="SNNC" class="w-5 h-5">
+                <span class="text-sm md:text-base">$NNC <span data-price style="color: #56966D"></span> <span data-percent style="color: #56966D"></span></span>
+            </div>
+            
+            <!-- Language Selector -->
+            <div class="relative">
+                <button id="languageButton" class="px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-green-500/30 bg-green-500/10 text-white flex items-center gap-2 text-sm md:text-base">
+                    <span id="selectedLanguage">CN</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 md:w-4 md:h-4">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                
+                <!-- Dropdown Menu -->
+                <div id="languageDropdown" class="hidden absolute top-full right-0 mt-2 w-24 bg-black/90 border border-green-500/30 rounded-lg overflow-hidden">
+                    <a href="/index.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">EN</a>
+                    <a href="/index_id.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">ID</a>
+                    <a href="/index_ind.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">IND</a>
+                    <a href="/index_cn.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">CN</a>
+                    <a href="/index_ko.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">KO</a>
+                    <a href="/index_ja.html" class="block px-4 py-2 text-white hover:bg-green-500/20 text-sm">JA</a>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <!-- 主内容 -->
     <div class="container mx-auto px-4 md:px-6 md:h-[calc(100vh-88px)] flex flex-col justify-between relative z-10">
         <!-- 顶部内容 -->
         <div class="mt-8 md:mt-20 mx-auto md:mx-0 text-center md:text-left w-full md:w-1/2 md:ml-[45%]">
+            <!-- Price Display (Mobile)-->
+            <div class="md:hidden block mb-4">
+                <div class="inline-flex items-center gap-1 px-2 py-1.5 rounded-full border border-green-500/30 bg-green-500/10 text-white">
+                    <img src="./assets/images/nnc.png" alt="SNNC" class="w-4 h-4">
+                    <span class="text-xs whitespace-nowrap">$NNC <span data-price-mobile style="color: #56966D"></span> <span data-percent-mobile style="color: #56966D"></span></span>
+                </div>
+            </div>
+
             <!-- 徽章 -->
             <button class="inline-block px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-green-500/30 bg-green-500/10 text-white mb-4 md:mb-6 hover:bg-green-500/20 transition-all text-sm md:text-base">
                 New Nation
@@ -158,7 +175,7 @@
           
           <!-- 硬币图像 -->
           <img 
-            src="./assets/images/welcome-coin-1.png" 
+            src="./assets/images/nnc.png" 
             alt="新国度硬币" 
             class="w-full max-w-lg mx-auto relative z-10 glow-effect"
             style="filter: drop-shadow(0 0 20px rgba(34, 197, 94, 0.3));"
@@ -210,9 +227,9 @@
     <div class="container mx-auto px-4 md:px-6">
       <!-- 左列 -->
       <div class="flex flex-col md:flex-row justify-between gap-12">
-        <div class="w-full md:w-1/2">
+        <div class="w-full md:w-1/2 flex flex-col justify-center">
           <!-- 徽章 -->
-          <button class="inline-block px-3 py-1.5 rounded-full border border-green-500/30 bg-green-500/10 text-white mb-6 text-sm">
+          <button class="inline-flex px-3 py-1.5 rounded-full border border-green-500/30 bg-green-500/10 text-white mb-6 text-sm w-fit">
               为什么选择我们？
           </button>
 
@@ -222,47 +239,6 @@
             最小化健康风险。
           </h2>
 
-          <!-- 下载按钮 -->
-          <div class="flex flex-col items-center md:items-start gap-4">
-            <button 
-                onclick="window.location.href='assets/apk/New Nation.apk'" 
-                class="inline-flex w-[250px] px-6 py-3 rounded-full border border-green-500/30 bg-green-500/10 text-white hover:bg-green-500/20 transition-all text-base text-center justify-center">
-                下载安卓版本
-            </button>
-            <button 
-                onclick="window.location.href='https://i.diawi.com/wJmyjd'" 
-                class="inline-flex w-[250px] px-6 py-3 rounded-full border border-green-500/30 bg-green-500/10 text-white hover:bg-green-500/20 transition-all text-base text-center justify-center">
-                下载iOS版本
-            </button>
-            <!-- <div class="relative mb-24 md:mb-0">
-                <button class="inline-flex w-[250px] px-6 py-3 rounded-full border border-green-500/30 bg-green-500/10 text-white hover:bg-green-500/20 transition-all text-base text-center justify-center backdrop-blur-md bg-opacity-20 bg-black/20 backdrop-filter">
-                    <span class="opacity-50">下载iOS版本</span>
-                </button>
-                <div class="absolute top-full left-0 right-0 mt-4 text-center">
-                    <p class="text-white/70 text-sm mb-2">iOS版本发布时间</p>
-                    <div class="inline-block bg-black/50 px-6 py-3 rounded-lg border border-green-500/30">
-                        <div class="flex justify-center gap-4 text-white">
-                            <div class="text-center">
-                                <span id="days" class="text-xl font-bold">--</span>
-                                <p class="text-xs text-white/70">天</p>
-                            </div>
-                            <div class="text-center">
-                                <span id="hours" class="text-xl font-bold">--</span>
-                                <p class="text-xs text-white/70">时</p>
-                            </div>
-                            <div class="text-center">
-                                <span id="minutes" class="text-xl font-bold">--</span>
-                                <p class="text-xs text-white/70">分</p>
-                            </div>
-                            <div class="text-center">
-                                <span id="seconds" class="text-xl font-bold">--</span>
-                                <p class="text-xs text-white/70">秒</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-          </div>
         </div>
 
         <!-- 右列 -->
@@ -343,6 +319,47 @@
       </div>
     </div>
   </section>
+
+    <!-- 下载部分 -->
+    <section class="py-20 relative overflow-hidden">
+      <!-- 顶部发光边框 -->
+      <div class="absolute top-0 left-0 right-0">
+        <div class="h-[2px] bg-gradient-to-r from-transparent via-green-500/30 to-transparent blur-[8px]"></div>
+        <div class="h-[1px] bg-gradient-to-r from-transparent via-green-500/50 to-transparent blur-[4px]"></div>
+      </div>
+      
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="flex flex-col items-center text-center">
+          <!-- 标题 -->
+          <h2 class="text-4xl md:text-6xl font-medium text-white mb-12">
+            下载 New Nation 应用
+          </h2>
+  
+          <!-- 下载按钮容器 -->
+          <div class="flex flex-col md:flex-row gap-4 md:gap-8">
+            <!-- 安卓按钮 -->
+            <a href="assets/apk/New Nation.apk" 
+               class="inline-flex items-center w-[250px] px-8 py-4 rounded-full border border-green-500/30 bg-green-500/10 text-white hover:bg-green-500/20 transition-all gap-3 justify-center">
+              <img src="./assets/images/android.png" alt="安卓" class="">
+              <span>安卓版本</span>
+            </a>
+  
+            <!-- iOS按钮 -->
+            <a href="https://i.diawi.com/wJmyjd" 
+               class="inline-flex items-center w-[250px] px-8 py-4 rounded-full border border-green-500/30 bg-green-500/10 text-white hover:bg-green-500/20 transition-all gap-3 justify-center">
+              <img src="./assets/images/ios.png" alt="iOS" class="">
+              <span>iOS版本</span>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- 底部发光边框 -->
+      <div class="absolute bottom-0 left-0 right-0">
+        <div class="h-[2px] bg-gradient-to-r from-transparent via-green-500/30 to-transparent blur-[8px]"></div>
+        <div class="h-[1px] bg-gradient-to-r from-transparent via-green-500/50 to-transparent blur-[4px]"></div>
+      </div>
+    </section>
 
   <!-- 生态系统部分 -->
   <section class="py-20 relative overflow-hidden">

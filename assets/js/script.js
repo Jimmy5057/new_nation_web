@@ -81,30 +81,51 @@ Best regards.`;
         chatButton.addEventListener('touchcancel', handleRelease);
     }
 
-    // Set the countdown date (January 22, 2025)
-    const countDownDate = new Date('2025-01-22T00:00:00').getTime();
+    // Price Update Function
+    async function updatePrice() {
+        try {
+            const response = await fetch('https://api.crmclick.io/PublicApi/allTicker');
+            const data = await response.json();
+            
+            // Find NNC price data
+            const nncData = data.data.find(item => item.market === 'NNCUSDT');
+            if (nncData) {
+                // Update desktop price
+                const priceElement = document.querySelector('[data-price]');
+                const percentElement = document.querySelector('[data-percent]');
+                // Update mobile price
+                const priceMobileElement = document.querySelector('[data-price-mobile]');
+                const percentMobileElement = document.querySelector('[data-percent-mobile]');
+                
+                const price = Number(nncData.last).toFixed(8);
+                const percent = Number(nncData.priceChangePercent).toFixed(2);
+                const isNegative = percent < 0;
+                const color = isNegative ? '#FF4B4B' : '#56966D';
 
-    // Update the countdown every 1 second
-    const countdownTimer = setInterval(function() {
-        const now = new Date().getTime();
-        const distance = countDownDate - now;
+                // Update desktop elements
+                if (priceElement && percentElement) {
+                    priceElement.textContent = price;
+                    percentElement.textContent = `${percent > 0 ? '+' : ''}${percent}%`;
+                    priceElement.style.color = color;
+                    percentElement.style.color = color;
+                }
 
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        document.getElementById("days").innerHTML = String(days).padStart(2, '0');
-        document.getElementById("hours").innerHTML = String(hours).padStart(2, '0');
-        document.getElementById("minutes").innerHTML = String(minutes).padStart(2, '0');
-        document.getElementById("seconds").innerHTML = String(seconds).padStart(2, '0');
-
-        if (distance < 0) {
-            clearInterval(countdownTimer);
-            document.getElementById("days").innerHTML = "00";
-            document.getElementById("hours").innerHTML = "00";
-            document.getElementById("minutes").innerHTML = "00";
-            document.getElementById("seconds").innerHTML = "00";
+                // Update mobile elements
+                if (priceMobileElement && percentMobileElement) {
+                    priceMobileElement.textContent = price;
+                    percentMobileElement.textContent = `${percent > 0 ? '+' : ''}${percent}%`;
+                    priceMobileElement.style.color = color;
+                    percentMobileElement.style.color = color;
+                }
+            }
+        } catch (error) {
+            console.error('Error fetching price:', error);
         }
-    }, 1000);
+    }
+
+    // Initial price update
+    updatePrice();
+
+    // Update price every 5 seconds
+    setInterval(updatePrice, 5000);
 });
